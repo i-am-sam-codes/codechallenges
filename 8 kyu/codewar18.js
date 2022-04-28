@@ -5,3 +5,10 @@ class SmallestIntegerFinder {
       return lowest;
     }
 }
+
+// Refactored
+class SmallestIntegerFinder {
+  findSmallestInt(args) {
+   return Math.min(...args)
+  }
+}
