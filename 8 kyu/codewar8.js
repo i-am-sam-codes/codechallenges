@@ -6,3 +6,8 @@ function boolToWord( bool ){
       return "No";
     };
 }
+
+// Refactored
+function boolToWord( bool ){
+  return bool === true ? "Yes" : "No"
+}
