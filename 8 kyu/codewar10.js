@@ -1,4 +1,4 @@
-//In this simple assignment you are given a number and have to make it negative. But maybe the number is already negative?
+// In this simple assignment you are given a number and have to make it negative. But maybe the number is already negative?
 function makeNegative(num) {
     if(num > 0){
      return num * -1;
@@ -8,3 +8,8 @@ function makeNegative(num) {
       return num;
    }
 }
+
+// Refactored 
+function makeNegative(num) {
+   return num >= 0 ? -Math.abs(num) : num
+ }
