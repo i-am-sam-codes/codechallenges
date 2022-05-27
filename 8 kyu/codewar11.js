@@ -6,3 +6,13 @@ const summation = function (num) {
     }
     return sum
 }
+
+// Refactored
+
+const summation = function (num) {
+  let count = [];
+ for(let i=1; i <= num; i++) {
+  count.push(i)
+ }
+ return count.reduce((a,b) => a + b)
+}
